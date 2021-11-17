@@ -1,10 +1,14 @@
 ﻿<template>
-    <div>Hola Orden N!</div>
+    <div>Hola Orden {{id}}! Tu matrícula es: {{plateNumber}}</div>
 </template>
 
 <script>
     export default {
-        name: "Order"
+        name: "Order",
+        props: {
+            id: String,
+            plateNumber: String
+        }
     }
 </script>
 

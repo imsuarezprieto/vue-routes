@@ -19,9 +19,10 @@ const routes: Array<RouteConfig> = [
         component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
     },
     {
-        path: '/order',
+        path: '/order/:id/:plateNumber',
         name: 'Order',
-        component: () => import(/* webpackChunkName: "about" */ '../views/Order.vue')
+        component: () => import(/* webpackChunkName: "about" */ '../views/Order.vue'),
+        props: true
     }
 ]
 
